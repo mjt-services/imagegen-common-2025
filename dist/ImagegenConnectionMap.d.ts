@@ -1,4 +1,9 @@
 import type { ImageResponse, ImageToImageRequest, TextToImageRequest } from "./3rd-party/Automatic1111Types";
+export type BinaryImageResponse = {
+    images: ArrayBuffer[];
+    parameters: Record<string, any>;
+    info: string;
+};
 export type ImagegenConnectionMap = {
     "imagegen.txt2img": {
         request: {
@@ -16,7 +21,7 @@ export type ImagegenConnectionMap = {
             options?: Partial<{}>;
             body: ImageToImageRequest;
         };
-        response: ImageResponse;
+        response: BinaryImageResponse;
         headers: {
             url?: string;
             authToken?: string;
