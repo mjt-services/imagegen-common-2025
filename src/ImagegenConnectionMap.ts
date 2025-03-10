@@ -16,7 +16,7 @@ export type ImagegenConnectionMap = {
       options?: Partial<{}>;
       body: TextToImageRequest;
     };
-    response: ImageResponse;
+    response: BinaryImageResponse;
     headers: {
       url?: string;
       authToken?: string;
