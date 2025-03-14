@@ -1,5 +1,4 @@
 import type {
-  ImageResponse,
   ImageToImageRequest,
   TextToImageRequest,
 } from "./3rd-party/Automatic1111Types";
@@ -8,6 +7,9 @@ export type BinaryImageResponse = {
   images: ArrayBuffer[];
   parameters: Record<string, any>;
   info: string;
+  progress?: number;
+  etaRelative?: number;
+  finalized?: boolean;
 };
 
 export type ImagegenConnectionMap = {
