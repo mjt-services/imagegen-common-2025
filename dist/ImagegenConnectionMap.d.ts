@@ -4,7 +4,8 @@ export type BinaryImageResponse = {
     parameters: Record<string, any>;
     info: string;
     progress?: number;
-    etaRelative?: number;
+    etaSeconds?: number;
+    aborted?: boolean;
     finalized?: boolean;
 };
 export type ImagegenConnectionMap = {
