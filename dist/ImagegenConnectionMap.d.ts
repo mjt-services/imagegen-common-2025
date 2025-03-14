@@ -3,6 +3,9 @@ export type BinaryImageResponse = {
     images: ArrayBuffer[];
     parameters: Record<string, any>;
     info: string;
+    progress?: number;
+    etaRelative?: number;
+    finalized?: boolean;
 };
 export type ImagegenConnectionMap = {
     "imagegen.txt2img": {
