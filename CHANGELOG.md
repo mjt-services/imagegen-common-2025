@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-06-25
+- added LORA and model listing operations ([2c752ca](https://github.com/mjt-services/imagegen-common-2025/commit/2c752ca991067f0d7e9d6c301b436840d4f1cbe0)) by user
+
 ## 2025-03-14
 - added aborted flag ([0e61f0d](https://github.com/mjt-services/imagegen-common-2025/commit/0e61f0d4ce52d8739630e6a81e069dcbe8957e92)) by Matt Taylor
 - added eta to BinaryImageResponse ([5a6e708](https://github.com/mjt-services/imagegen-common-2025/commit/5a6e7088b7d830de1070b125feaaae7b56b9e294)) by Matt Taylor

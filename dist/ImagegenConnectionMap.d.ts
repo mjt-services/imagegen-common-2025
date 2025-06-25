@@ -1,4 +1,4 @@
-import type { ImageToImageRequest, TextToImageRequest } from "./3rd-party/Automatic1111Types";
+import type { GetLorasResponse, ImageToImageRequest, ModelListResponse, TextToImageRequest } from "./3rd-party/Automatic1111Types";
 export type BinaryImageResponse = {
     images: ArrayBuffer[];
     parameters: Record<string, any>;
@@ -9,6 +9,39 @@ export type BinaryImageResponse = {
     finalized?: boolean;
 };
 export type ImagegenConnectionMap = {
+    "imagegen.getModels": {
+        request: {
+            options?: Partial<{}>;
+            body: TextToImageRequest;
+        };
+        response: ModelListResponse;
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
+    "imagegen.getModules": {
+        request: {
+            options?: Partial<{}>;
+            body: TextToImageRequest;
+        };
+        response: GetLorasResponse;
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
+    "imagegen.getLoras": {
+        request: {
+            options?: Partial<{}>;
+            body: TextToImageRequest;
+        };
+        response: GetLorasResponse;
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
     "imagegen.txt2img": {
         request: {
             options?: Partial<{}>;
