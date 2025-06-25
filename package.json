@@ -20,7 +20,7 @@
     "@mjt-engine/object": "github:mjt-engine/object"
   },
   "devDependencies": {
-    "typedoc": "^0.27.6",
-    "typescript": "^5.4.5"
+    "typedoc": "^0.27.9",
+    "typescript": "^5.8.3"
   }
 }
