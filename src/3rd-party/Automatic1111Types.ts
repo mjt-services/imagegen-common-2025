@@ -125,3 +125,67 @@ export type APIResponse<T> = {
   data?: T;
   error?: string;
 };
+
+/**
+ * Metadata for a LoRA model as returned by the API.
+ */
+export interface LoraMetadata {
+  [key: string]: any;
+  // Contains built-in metadata (e.g. training dataset, version).
+  // Does NOT include user_metadata (activation text, preferences), as of July 2024 :contentReference[oaicite:1]{index=1}.
+}
+
+/**
+ * Representation of a single LoRA model entry.
+ */
+export interface LoraEntry {
+  /** Filename or identifier, e.g. "CoolStyle-Lora.safetensors" */
+  name: string;
+
+  /** Alias used in prompts, e.g. "coolstyle" */
+  alias?: string;
+
+  /** Filesystem path to the LoRA model file */
+  path: string;
+
+  /** Arbitrary metadata object with properties describing the model */
+  metadata: LoraMetadata;
+}
+
+/**
+ * The full result array returned by GET /sdapi/v1/loras
+ */
+export type GetLorasResponse = LoraEntry[];
+
+export type GetModulesResponse = {
+  model_name: string;
+  filename: string;
+}[];
+
+/**
+ * Represents a single model checkpoint or LoRA model entry.
+ */
+export interface ModelEntry {
+  /** Human-readable title of the model, shown in UI dropdowns */
+  title: string;
+
+  /** Internal model identifier or name used by the backend */
+  model_name: string;
+
+  /** Short hash (typically MD5 or similar) for quick reference */
+  hash: string;
+
+  /** Full SHA-256 checksum of the model file */
+  sha256: string;
+
+  /** Filename of the model, including extension (e.g., .safetensors, .ckpt) */
+  filename: string;
+
+  /** Path to the configuration file or a config identifier (e.g., "v1-inference.yaml") */
+  config: string;
+}
+
+/**
+ * Response format for APIs returning a list of models.
+ */
+export type ModelListResponse = ModelEntry[];

@@ -1,5 +1,7 @@
 import type {
+  GetLorasResponse,
   ImageToImageRequest,
+  ModelListResponse,
   TextToImageRequest,
 } from "./3rd-party/Automatic1111Types";
 
@@ -14,6 +16,39 @@ export type BinaryImageResponse = {
 };
 
 export type ImagegenConnectionMap = {
+  "imagegen.getModels": {
+    request: {
+      options?: Partial<{}>;
+      body: TextToImageRequest;
+    };
+    response: ModelListResponse;
+    headers: {
+      url?: string;
+      authToken?: string;
+    };
+  };
+  "imagegen.getModules": {
+    request: {
+      options?: Partial<{}>;
+      body: TextToImageRequest;
+    };
+    response: GetLorasResponse;
+    headers: {
+      url?: string;
+      authToken?: string;
+    };
+  };
+  "imagegen.getLoras": {
+    request: {
+      options?: Partial<{}>;
+      body: TextToImageRequest;
+    };
+    response: GetLorasResponse;
+    headers: {
+      url?: string;
+      authToken?: string;
+    };
+  };
   "imagegen.txt2img": {
     request: {
       options?: Partial<{}>;
