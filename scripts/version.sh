@@ -6,7 +6,8 @@ VERSION=$(date +"%Y.%-m.%-d-%H%M")
 echo "Updating version to $VERSION"
 
 # Update the version in package.json
-sed -i '' "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
+perl -pi -e "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
+
 
 # Commit the version change
 git add -A dist
