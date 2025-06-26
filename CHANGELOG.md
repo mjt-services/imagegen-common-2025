@@ -2,6 +2,7 @@
 
 
 ## 2025-06-26
+- update version script for linux portability ([fcbd42b](https://github.com/mjt-services/imagegen-common-2025/commit/fcbd42b3a86ab238772654e9912110f661eea06a)) by user
 - remove body from lora/model list requests ([9f0ea9f](https://github.com/mjt-services/imagegen-common-2025/commit/9f0ea9fac6abc8372249b0f9e03ea897e9120475)) by user
 
 ## 2025-06-25
