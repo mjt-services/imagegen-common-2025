@@ -152,10 +152,6 @@ export interface LoraEntry {
   metadata: LoraMetadata;
 }
 
-/**
- * The full result array returned by GET /sdapi/v1/loras
- */
-export type GetLorasResponse = LoraEntry[];
 
 export type GetModulesResponse = {
   model_name: string;
