@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-06-26
+- remove body from lora/model list requests ([9f0ea9f](https://github.com/mjt-services/imagegen-common-2025/commit/9f0ea9fac6abc8372249b0f9e03ea897e9120475)) by user
+
 ## 2025-06-25
 - update deps ([f4cd49a](https://github.com/mjt-services/imagegen-common-2025/commit/f4cd49afd84159de030af7a9027b84286062f08b)) by user
 - added LORA and model listing operations ([2c752ca](https://github.com/mjt-services/imagegen-common-2025/commit/2c752ca991067f0d7e9d6c301b436840d4f1cbe0)) by user
