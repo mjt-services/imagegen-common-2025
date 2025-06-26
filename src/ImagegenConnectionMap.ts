@@ -19,7 +19,6 @@ export type ImagegenConnectionMap = {
   "imagegen.getModels": {
     request: {
       options?: Partial<{}>;
-      body: TextToImageRequest;
     };
     response: ModelListResponse;
     headers: {
@@ -30,7 +29,6 @@ export type ImagegenConnectionMap = {
   "imagegen.getModules": {
     request: {
       options?: Partial<{}>;
-      body: TextToImageRequest;
     };
     response: GetLorasResponse;
     headers: {
@@ -41,7 +39,6 @@ export type ImagegenConnectionMap = {
   "imagegen.getLoras": {
     request: {
       options?: Partial<{}>;
-      body: TextToImageRequest;
     };
     response: GetLorasResponse;
     headers: {
