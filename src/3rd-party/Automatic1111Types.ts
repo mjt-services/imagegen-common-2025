@@ -152,7 +152,6 @@ export interface LoraEntry {
   metadata: LoraMetadata;
 }
 
-
 export type GetModulesResponse = {
   model_name: string;
   filename: string;
@@ -180,8 +179,3 @@ export interface ModelEntry {
   /** Path to the configuration file or a config identifier (e.g., "v1-inference.yaml") */
   config: string;
 }
-
-/**
- * Response format for APIs returning a list of models.
- */
-export type ModelListResponse = ModelEntry[];
