@@ -11,7 +11,8 @@
     "build-docs": "pnpm run build && pnpm run docs",
     "changelog": "./scripts/changes.sh > CHANGELOG.md",
     "changelog-version": "pnpm run changelog && ./scripts/version.sh",
-    "publish": "pnpm run build-docs && pnpm run changelog-version"
+    "publish": "pnpm run build-docs && pnpm run changelog-version",
+    "gen:types": "openapi-typescript Automatic1111-openapi.json -o src/3rd-party/Automatic1111-openapi-types.ts"
   },
   "keywords": [],
   "author": "Matt Taylor (https://mjt.dev)",
@@ -20,6 +21,7 @@
     "@mjt-engine/object": "github:mjt-engine/object"
   },
   "devDependencies": {
+    "openapi-typescript": "^7.8.0",
     "typedoc": "^0.27.9",
     "typescript": "^5.8.3"
   }
