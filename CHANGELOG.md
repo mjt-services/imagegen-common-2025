@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-06-27
+- added opanapi automatic1111  types ([15c897f](https://github.com/mjt-services/imagegen-common-2025/commit/15c897f8d3e087e9459e3ed3b71f0aa660513f40)) by user
+
 ## 2025-06-26
 - model entries instead of full list across wire ([46c932c](https://github.com/mjt-services/imagegen-common-2025/commit/46c932cc520ba0b5b94cbf80ee91297b16ce5e28)) by user
 - stream lora entries ([38f43c3](https://github.com/mjt-services/imagegen-common-2025/commit/38f43c35e080e90b42e9849f5347824096eede73)) by user
