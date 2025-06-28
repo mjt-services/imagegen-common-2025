@@ -10,8 +10,29 @@ export type BinaryImageResponse = {
     finalized?: boolean;
 };
 export type ImagegenConnectionMap = {
+    "imagegen.setOptions": {
+        request?: {
+            options?: Partial<{}>;
+            body: Partial<components["schemas"]["Options"]>;
+        };
+        response: unknown;
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
+    "imagegen.getOptions": {
+        request?: {
+            options?: Partial<{}>;
+        };
+        response: components["schemas"]["Options"];
+        headers: {
+            url?: string;
+            authToken?: string;
+        };
+    };
     "imagegen.getSchedulers": {
-        request: {
+        request?: {
             options?: Partial<{}>;
         };
         response: components["schemas"]["SchedulerItem"];
@@ -21,7 +42,7 @@ export type ImagegenConnectionMap = {
         };
     };
     "imagegen.getSamplers": {
-        request: {
+        request?: {
             options?: Partial<{}>;
         };
         response: components["schemas"]["SamplerItem"];
@@ -31,7 +52,7 @@ export type ImagegenConnectionMap = {
         };
     };
     "imagegen.getModels": {
-        request: {
+        request?: {
             options?: Partial<{}>;
         };
         response: ModelEntry;
@@ -41,7 +62,7 @@ export type ImagegenConnectionMap = {
         };
     };
     "imagegen.getModules": {
-        request: {
+        request?: {
             options?: Partial<{}>;
         };
         response: components["schemas"]["SDModuleItem"];
@@ -51,7 +72,7 @@ export type ImagegenConnectionMap = {
         };
     };
     "imagegen.getLoras": {
-        request: {
+        request?: {
             options?: Partial<{}>;
         };
         response: LoraEntry;
