@@ -2,6 +2,7 @@
 
 
 ## 2025-06-28
+- request mandatory even if empty for ConnectionMaps ([ebf7dcc](https://github.com/mjt-services/imagegen-common-2025/commit/ebf7dcc81e2112e93aacfcf7cc2024c19da07548)) by user
 - added options operations ([398e624](https://github.com/mjt-services/imagegen-common-2025/commit/398e624c10e90d94ba03e54dd9fc45e021e72a72)) by user
 - cleanup modules list ([60a7882](https://github.com/mjt-services/imagegen-common-2025/commit/60a7882b28a508390ac532ccc801bd04f181d94e)) by user
 - send single items for lists across wire ([29787b6](https://github.com/mjt-services/imagegen-common-2025/commit/29787b657a61e5952945eedfe0188bf240a67234)) by user
