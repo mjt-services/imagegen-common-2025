@@ -152,11 +152,6 @@ export interface LoraEntry {
   metadata: LoraMetadata;
 }
 
-export type GetModulesResponse = {
-  model_name: string;
-  filename: string;
-}[];
-
 /**
  * Represents a single model checkpoint or LoRA model entry.
  */

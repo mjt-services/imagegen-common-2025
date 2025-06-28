@@ -1,6 +1,5 @@
 import { components } from "./3rd-party/Automatic1111-openapi-types";
 import type {
-  GetModulesResponse,
   ImageToImageRequest,
   LoraEntry,
   ModelEntry,
@@ -52,7 +51,7 @@ export type ImagegenConnectionMap = {
     request: {
       options?: Partial<{}>;
     };
-    response: GetModulesResponse;
+    response: components["schemas"]["SDModuleItem"];
     headers: {
       url?: string;
       authToken?: string;
