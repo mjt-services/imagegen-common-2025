@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-06-28
+- expose samplers, schedulers lists ([fa54dda](https://github.com/mjt-services/imagegen-common-2025/commit/fa54ddab7cff3de7218f3a4129eb8bcf5fe9358e)) by user
+
 ## 2025-06-27
 - added opanapi automatic1111  types ([15c897f](https://github.com/mjt-services/imagegen-common-2025/commit/15c897f8d3e087e9459e3ed3b71f0aa660513f40)) by user
 
