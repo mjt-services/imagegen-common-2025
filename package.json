@@ -1,6 +1,6 @@
 {
   "name": "@mjt-services/imagegen-common-2025",
-  "version": "2025.6.28-1337",
+  "version": "2025.6.28-1340",
   "sideEffects": false,
   "description": "imagegen commmon code",
   "main": "./dist/index.js",
