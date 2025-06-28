@@ -22,7 +22,7 @@ export type ImagegenConnectionMap = {
     request: {
       options?: Partial<{}>;
     };
-    response: components["schemas"]["SchedulerItem"][];
+    response: components["schemas"]["SchedulerItem"];
     headers: {
       url?: string;
       authToken?: string;
@@ -32,7 +32,7 @@ export type ImagegenConnectionMap = {
     request: {
       options?: Partial<{}>;
     };
-    response: components["schemas"]["SamplerItem"][];
+    response: components["schemas"]["SamplerItem"];
     headers: {
       url?: string;
       authToken?: string;
