@@ -2,6 +2,7 @@
 
 
 ## 2025-06-28
+- send single items for lists across wire ([29787b6](https://github.com/mjt-services/imagegen-common-2025/commit/29787b657a61e5952945eedfe0188bf240a67234)) by user
 - expose samplers, schedulers lists ([fa54dda](https://github.com/mjt-services/imagegen-common-2025/commit/fa54ddab7cff3de7218f3a4129eb8bcf5fe9358e)) by user
 
 ## 2025-06-27
